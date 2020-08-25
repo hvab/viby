@@ -8,3 +8,6 @@ node_modules
 
 # Distribute directories
 dist
+
+# Sensitive
+ftp.js

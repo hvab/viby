@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+{% block page__head %}
+  <head>
+  {% block page__meta %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% endblock page__meta %}
+
+  {% block page__title %}
+    <title>{% block page__titleContent %}{% endblock page__titleContent %}</title>
+  {% endblock page__title %}
+
+  {% block page__favicon %}
+    {# {% include "_favicon.html" %} #}
+  {% endblock page__favicon %}
+
+  {% block page__styles %}
+    <link rel="stylesheet" href="main.css">
+  {% endblock page__styles %}
+  </head>
+{% endblock page__head %}
+  <body class="page">
+  {% block page__content %}{% endblock page__content %}
+
+  {% block page__scripts %}
+    <script src="main.js"></script>
+  {% endblock page__scripts %}
+  </body>
+</html>
