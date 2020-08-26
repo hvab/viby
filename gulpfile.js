@@ -4,6 +4,7 @@ const babel = require('gulp-babel');
 const browserSync = require('browser-sync').create();
 const bundleBuilder = require('gulp-bem-bundle-builder');
 const bundlerFs = require('gulp-bem-bundler-fs');
+const concat = require('gulp-concat');
 const csso = require('gulp-csso');
 const debug = require('gulp-debug');
 const del = require('del');
@@ -15,9 +16,11 @@ const include = require('gulp-include');
 const notify = require('gulp-notify');
 const nunjucks = require('gulp-nunjucks-html');
 const postcss = require('gulp-postcss');
+const postcssColorFunction = require('postcss-color-function');
 const postcssImport = require('postcss-import');
 const postcssNested = require('postcss-nested');
 const postcssReporter = require('postcss-reporter');
+const postcssSimpleVars = require('postcss-simple-vars');
 const postcssUrl = require('postcss-url');
 const posthtml = require('gulp-posthtml');
 const posthtmlAltAlways = require('posthtml-alt-always');
@@ -27,7 +30,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const typograf = require('gulp-typograf');
 const uglify = require('gulp-uglify-es').default;
 const vinylFtp = require('vinyl-ftp');
-const concat = require('gulp-concat');
 
 const config = require('./config');
 const ftpConfig = require('./ftp');
@@ -51,7 +53,9 @@ function bemCss() {
               postcss(
                 [
                   postcssImport(),
+                  postcssSimpleVars(),
                   postcssNested,
+                  postcssColorFunction,
                   postcssUrl({
                     url: isDevelopment ? 'copy' : 'inline',
                   }),
