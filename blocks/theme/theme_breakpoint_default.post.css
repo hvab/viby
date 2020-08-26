@@ -1,0 +1,15 @@
+/* Переменные для mobile-first подхода */
+$screen-xs: 320px; /* Смартфоны */
+$screen-s: 720px; /* Планшеты в вертикальном режиме */
+$screen-m: 1024px; /* Планшеты в горизонтальном режиме */
+$screen-l: 1280px; /* Ноутбуки */
+$screen-xl: 1440px; /* Настольные компьютеры и ноутбуки */
+$screen-2xl: 1600px; /* Настольные компьютеры */
+
+/* Переменные для desktop-first подхода */
+$screen-xs-max: 719px;
+$screen-s-max: 1023px;
+$screen-m-max: 1279px;
+$screen-l-max: 1439px;
+$screen-xl-max: 1599px;
+$screen-2xl-max: 1920px;
