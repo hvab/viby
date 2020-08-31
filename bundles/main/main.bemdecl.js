@@ -9,6 +9,7 @@ module.exports = {
     'image',
     'embed',
     'spin',
+    'table',
     'print',
   ],
 };

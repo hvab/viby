@@ -1,0 +1,103 @@
+.table {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+
+  /* Reset for nesting within parents with `background-color`. */
+  background-color: transparent;
+  border-collapse: collapse;
+
+  th,
+  td {
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  th {
+    /* Centered by default, but left-align-ed to match the `td`s below. */
+    text-align: left;
+  }
+
+  thead th {
+    vertical-align: bottom;
+  }
+
+  caption {
+    text-align: left;
+  }
+}
+
+/* Themed */
+.table_theme_default {
+  margin-bottom: var(--space-m);
+
+  th,
+  td {
+    padding: var(--space-s);
+    border-top: 1px solid var(--color-bg-border);
+  }
+
+  thead th {
+    border-bottom: 2px solid var(--color-bg-border);
+  }
+
+  tbody + tbody {
+    border-top: 2px solid var(--color-bg-border);
+  }
+
+  caption {
+    padding-top: var(--space-s);
+    padding-bottom: var(--space-s);
+  }
+
+  /* Condensed table w/ half padding */
+  &.table_condensed {
+    th,
+    td {
+      padding: var(--space-2xs);
+    }
+  }
+
+  /* Add borders all around the table and between all the columns. */
+  &.table_bordered {
+    border: 1px solid var(--color-bg-border);
+
+    th,
+    td {
+      border: 1px solid var(--color-bg-border);
+    }
+
+    thead {
+      th,
+      td {
+        border-bottom-width: 2px;
+      }
+    }
+  }
+
+  /* Remove borders */
+  &.table_borderless {
+    th,
+    td,
+    thead th,
+    tbody + tbody {
+      border: 0;
+    }
+  }
+
+  /* Default zebra-stripe styles (alternating gray and transparent backgrounds) */
+  &.table_striped {
+    tbody tr:nth-of-type(odd) {
+      background-color: var(--color-bg-stripe);
+    }
+  }
+
+  /* Placed here since it has to come after the potential zebra striping */
+  &.table_hover {
+    tbody tr {
+      &:hover {
+        background-color: var(--color-bg-ghost);
+      }
+    }
+  }
+}
