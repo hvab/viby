@@ -1,0 +1,26 @@
+{% extends "templates/page.html" %}
+
+{% block page__content %}
+
+<h1>link</h1>
+<p>
+  Используется для создания различных типов ссылок.
+</p>
+
+<a href="#" class="link link_view_default">default</a>
+<a href="#" class="link link_view_default" aria-disabled="true">default</a>
+<br>
+<a href="#" class="link link_view_minor">minor</a>
+<a href="#" class="link link_view_minor" aria-disabled="true">minor</a>
+<br>
+<a href="#" class="link link_view_external">external</a>
+<a href="#" class="link link_view_external" aria-disabled="true">external</a>
+<br>
+<a href="#" class="link link_view_text">text</a>
+<a href="#" class="link link_view_text" aria-disabled="true">text</a>
+<br>
+<a href="#" class="link link_view_default link_pseudo">pseudo</a>
+<br>
+<a href="#" class="link link_view_default link_disabled">disabled</a>
+
+{% endblock page__content %}

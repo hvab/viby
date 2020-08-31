@@ -21,7 +21,9 @@
   </head>
 {% endblock page__head %}
   <body class="page theme theme_color_default theme_font_default theme_size_default theme_space_default">
-  {% block page__content %}{% endblock page__content %}
+    <div class="container container_align_center container_size_s text text_line-height_m">
+      {% block page__content %}{% endblock page__content %}
+    </div>
 
   {% block page__scripts %}
     <script src="main.js"></script>
