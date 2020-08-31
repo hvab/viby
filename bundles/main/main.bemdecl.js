@@ -1,3 +1,3 @@
 module.exports = {
-  decl: ['theme', 'page', 'text', 'container', 'link'],
+  decl: ['theme', 'page', 'text', 'container', 'link', 'icon'],
 };
