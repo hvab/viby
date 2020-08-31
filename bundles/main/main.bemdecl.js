@@ -8,5 +8,6 @@ module.exports = {
     'icon',
     'image',
     'embed',
+    'print',
   ],
 };
