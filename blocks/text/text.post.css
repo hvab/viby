@@ -424,3 +424,89 @@ See: http://a11yproject.com/posts/how-to-hide-content */
   line-height: 1rem; /* 16px */
   letter-spacing: 0.0065em;
 }
+
+/* body-long */
+.text_typography_body-long-xl {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.text_typography_body-long-l {
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.text_typography_body-long-m {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.text_typography_body-long-s {
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1.125rem; /* 18px */
+}
+
+/* body-short */
+.text_typography_body-short-xl {
+  font-size: 1rem; /* 16px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.text_typography_body-short-l {
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.125rem; /* 18px */
+}
+
+.text_typography_body-short-m {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.125rem; /* 18px */
+}
+
+.text_typography_body-short-s {
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1rem; /* 16px */
+}
+
+/* caption */
+.text_typography_caption-xl {
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1rem; /* 16px */
+  letter-spacing: 0.0065em;
+}
+
+.text_typography_caption-l {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+  letter-spacing: 0.0065em;
+}
+
+.text_typography_caption-m {
+  font-size: 0.6875rem; /* 11px */
+  line-height: 1rem; /* 16px */
+  letter-spacing: 0.0065em;
+}
+
+/* overline */
+.text_typography_overline-l {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 0.875rem; /* 14px */
+  letter-spacing: 0.0065em;
+}
+
+.text_typography_overline-m {
+  font-size: 0.6875rem; /* 11px */
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 0.875rem; /* 14px */
+  letter-spacing: 0.0065em;
+}
+
+.text_typography_overline-s {
+  font-size: 0.625rem; /* 10px */
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 0.75rem; /* 12px */
+  letter-spacing: 0.0065em;
+}
