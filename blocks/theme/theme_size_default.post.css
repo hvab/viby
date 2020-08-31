@@ -19,5 +19,12 @@
   --line-height-text-m: 1.5em;
   --line-height-text-l: 1.6em;
 
+  /* Border radius */
+  --border-radius-xs: 2px;
+  --border-radius-s: 4px;
+  --border-radius-m: 6px;
+  --border-radius-l: 8px;
+  --border-radius-xl: 10px;
+
   font-size: var(--size-text-base);
 }

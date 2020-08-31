@@ -1,0 +1,12 @@
+.image_fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.image_rounded {
+  border-radius: var(--border-radius-l);
+}
+
+.image_circle {
+  border-radius: 50%;
+}
