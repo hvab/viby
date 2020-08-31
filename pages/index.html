@@ -1,5 +1,121 @@
 {% extends "templates/page.html" %}
 
 {% block page__content %}
-  <h1>Hello</h1>
+  <div class="text text_line-height_m">
+    <h1>Text</h1>
+    <p>
+      Компонент для представления текстовых данных в интерфейсе. Этот компонент упрощает работу с визуальной иерархией и объемом текстов.
+    </p>
+
+    <h2>Display (Large Title)</h2>
+    <p>
+      <b>Bold 700, Medium 500, Regular 400, Light 300</b><br>
+      Семантика использования — акцидентная (декоративная) крупная типографика для расстановки акцентов на страницах. Используется для заголовков, подзаголовков, цифр в фактоидах. Базовая размерная сетка состоит из четырёх размеров и начертаний. Начертание выбирается, исходя из контекста, для соблюдения иерархии и гармонии.
+    </p>
+
+    <div class="text text_typography_display-xl">Display XL</div>
+    <p>
+      <b>Promo-site, Welcome-page, Onboarding, Dashboard, Articles etc.</b><br>
+      Визуализация данных и / или больших цифр на страницах с крупной графикой и / или сложной структурой, большим количеством других акцентов. <br> Используйте экономно, когда конкретные цифры и / или факты должны выделяться. <br>
+      Безопасный интерлиньяж — 68px.
+    </p>
+
+    <div class="text text_typography_display-l">Display L</div>
+    <p>
+      <b>Full Screen hero-moments e.g. Y.Afisha name vip person, Y.News Supertitle.</b><br>
+      Самый крупный акцентный заголовок, используется на информационных страницах для выделения важной информации. <br>
+      Безопасный интерлиньяж — 56px.
+    </p>
+
+    <div class="text text_typography_display-m">Display M</div>
+    <p>
+      <b>Page subsection title, Empty page, Error page.</b><br>
+      Заголовок второго порядка для секций информационных страниц. <br> Допустимо использовать для пустых состояний, страниц ошибок. <br>
+      Безопасный интерлиньяж — 48px.
+    </p>
+
+    <div class="text text_typography_display-s">Display S</div>
+    <p>
+      <b>Page Headline, Title, Greeting moments, Articles.</b><br>
+      Самый маленький декоративный заголовок. Используется на стартовом экране приветствия, заглавия в образовательных продуктах, в качестве заголовков страниц в аналитических продуктах. <br>
+      Безопасный интерлиньяж — 40px.
+    </p>
+
+    <h2>Headline (Titles)</h2>
+    <b>Bold 700, Medium 500, Regular 400, Light 300</b><br>
+    <p>
+      Семантика использования — заголовки разных уровней на страницах и в диалоговых окнах, самые компактные размеры можно использовать в качестве подзаголовков. Базовая размерная сетка состоит из четырёх размеров и начертаний, которые выбираются исходя из контекста страницы и направленности сервиса. В B2C интерфейсах лучше выбирать размеры побольше, для B2B лучше выбирать более компактные размеры.
+    </p>
+
+    <div class="text text_typography_headline-xl">Headline XL</div>
+    <p>
+      <b>Page titles.</b><br>
+      Самый крупный заголовок страницы. Используется на страницах с другими крупными блоками (большая графика, дашборд), когда нужно сохранить акцент на заголовке. Один на страницу. <br>
+      Безопасный интерлиньяж — 40px.
+    </p>
+
+    <div class="text text_typography_headline-l">Headline L</div>
+    <p>
+      <b>Page titles, Modal and popup titles, Y.Search, Kinopoisk, Q, News page title.</b><br>
+      Менее контрастный заголовок используется на страницах, в попапах и модальных окнах не перегруженных другими крупными блоками. <br>
+      Безопасный интерлиньяж — 36px.
+    </p>
+
+    <div class="text text_typography_headline-m">Headline M</div>
+    <p>
+      <b>Headline page sections, Modal and popup headline.</b><br>
+      Заголовок разделов страницы, попапов и модальных окон. Используется в перегруженных интерфейсах. <br>
+      Безопасный интерлиньяж — 30px.
+    </p>
+
+    <div class="text text_typography_headline-s">Headline S</div>
+    <p>
+      <b>Page and pane headers, navigation, Titles in teaching bubbles, dialogs and cards.</b><br>
+      Заголовок подразделов страницы и небольших блоков: страниц и панелей, навигации, заголовков в образовательных подсказках, диалоговых окнах и карточках. <br>
+      Безопасный интерлиньяж — 24px.
+    </p>
+
+    <div class="text text_typography_headline-xs">Headline XS</div>
+    <p>
+      <b>Pivot tables, Subtitle, Headline Y.Search, Y.Direct.</b><br>
+      Самый маленький заголовок. Используется для подразделов страниц и компактных блоков. В нагруженных интерфейсах выполняет функцию заголовка страницы. <br>
+      Безопасный интерлиньяж — 24px.
+    </p>
+
+    <h2>Subheader (Item title)</h2>
+    <p>
+      <b>Bold 700, Medium 500</b><br>
+      Семантика использования — подзаголовки или названия сущностей. Базовая размерная сетка состоит из четырёх размеров и двух начертаний. При работе с большим количеством информации достаточно выбрать кегль, совпадающий с основным набором, увеличив его контраст за счёт веса. Если вы владеете достаточным количеством места, выбирайте кегль побольше на несколько порядков, например 13 и 15, 14 и 16.
+    </p>
+
+    <div class="text text_typography_subheader-xl">Subheader XL</div>
+    <p>
+      <b>Media & News services, Small Cards, Islands, Small Widgets.</b><br>
+      Самый крупный подзаголовок. Используется в небольших карточках, островах, виджетах. <br>
+      Безопасный интерлиньяж — 20px.
+    </p>
+
+    <div class="text text_typography_subheader-l">Subheader L</div>
+    <p>
+      <b>Small Cards, Islands, Small Widgets, Subtitle Form.</b><br>
+      Подзаголовок второго порядка. Используется для небольших контентных блоков. В нагруженных интерфейсах выполняет функцию подзаголовков страниц форм. <br>
+      Безопасный интерлиньяж — 18px.
+    </p>
+
+    <div class="text text_typography_subheader-m">Subheader M</div>
+    <p>
+      <b>Media & News services, Small Cards, Islands, Small Widgets.</b><br>
+      Дополнительный компактный подзаголовок. Используется для обозначения разделов и рубрик в медиа и контентных сервисах. <br>
+      Безопасный интерлиньяж — 18px.
+    </p>
+
+    <div class="text text_typography_subheader-s">Subheader S</div>
+    <p>
+      <b>Media & News services, Small Cards, Islands, Small Widgets.</b><br>
+      Самый маленький подзаголовок. Используется в нагруженных сервисах. <br>
+      Безопасный интерлиньяж — 16px.
+    </p>
+
+  </div>
+
 {% endblock page__content %}
