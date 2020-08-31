@@ -10,6 +10,7 @@ module.exports = {
     'embed',
     'spin',
     'table',
+    'media',
     'print',
   ],
 };
