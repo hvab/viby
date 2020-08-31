@@ -1,0 +1,46 @@
+.spin {
+  display: none;
+  border: 3px solid currentColor;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+}
+
+.spin_visible {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin_size_xs {
+  width: 16px;
+  height: 16px;
+}
+
+.spin_size_s {
+  width: 24px;
+  height: 24px;
+}
+
+.spin_size_m {
+  width: 28px;
+  height: 28px;
+}
+
+.spin_size_l {
+  width: 32px;
+  height: 32px;
+}
+
+.spin_size_xl {
+  width: 38px;
+  height: 38px;
+}
