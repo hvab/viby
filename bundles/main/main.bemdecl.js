@@ -3,6 +3,7 @@ module.exports = {
     'theme',
     'page',
     'text',
+    'content',
     'container',
     'link',
     'icon',

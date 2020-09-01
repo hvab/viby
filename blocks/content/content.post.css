@@ -1,0 +1,149 @@
+.content {
+  /* Add the correct text decoration in Chrome, Edge, and Safari */
+  abbr[title] {
+    text-decoration: underline dotted;
+  }
+
+  /* Add the correct font weight in Chrome, Edge, and Safari */
+  b,
+  strong {
+    font-weight: bolder;
+  }
+
+  /* Add the correct height in Firefox */
+  hr {
+    height: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Prevent `sub` and `sup` elements from affecting the line height in all browsers */
+  sub,
+  sup {
+    position: relative;
+    font-size: 75%;
+    vertical-align: baseline;
+    line-height: 0;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  /* Add the correct font size in all browsers */
+  small {
+    font-size: 80%;
+  }
+
+  address,
+  blockquote,
+  details,
+  dl,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  ol,
+  p,
+  pre,
+  table,
+  ul {
+    margin-top: 0;
+    margin-bottom: var(--space-m);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-top: var(--space-2xl);
+    line-height: var(--line-height-text-2xs);
+  }
+
+  h1 + h2,
+  h2 + h3,
+  h1:first-child,
+  h2:first-child,
+  h3:first-child {
+    margin-top: 0;
+  }
+
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
+}
+
+/* Themed */
+.content_theme_default {
+  line-height: 1.5;
+
+  /* http://www.modularscale.com/?16&px&1.414 */
+  h1 {
+    font-size: 2.827rem; /* 45.234px */
+  }
+
+  h2 {
+    font-size: 1.999rem; /* 31.99px */
+  }
+
+  h3 {
+    font-size: 1.414rem; /* 22.624px */
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-style: italic;
+  }
+
+  h6 {
+    font-weight: normal;
+  }
+
+  ol,
+  ul {
+    padding-left: 2rem;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 2rem;
+  }
+
+  blockquote {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid var(--color-typo-ghost);
+  }
+
+  mark {
+    padding: 0.2em;
+    background-color: #fcf8e3;
+  }
+}
