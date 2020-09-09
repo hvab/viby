@@ -4,6 +4,7 @@ module.exports = {
     'page',
     'text',
     'content',
+    'layout',
     'container',
     'link',
     'icon',
